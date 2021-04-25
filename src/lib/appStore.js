@@ -2,7 +2,11 @@ export const appStore = {
     login: false,
     happyBirthday: false,
     step1: false,
-    step2: false
+    step2: false,
+    step3: false,
+    step4: false,
+    step5: false,
+    step6: false
 }
 
 export const setAppStore = (value = appStore) => {

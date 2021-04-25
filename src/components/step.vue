@@ -1,10 +1,9 @@
 <template>
   <div>
-    {{title}}
+    <h2>{{title}}</h2>
     <div>
       <slot></slot>
     </div>
-    Введи ответ
     <el-form :model="model" :rules="rules" ref="answer" label-position="left">
       <el-form-item label="Ответ" prop="value">
         <el-input placeholder="Введи ответ" v-model="model.value"></el-input>

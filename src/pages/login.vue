@@ -16,7 +16,7 @@
 import { setAppStoreItem } from '../lib/appStore';
 
 const LOGIN = '123';
-const PASSWORD = '3363';
+const PASSWORD = '123';
 
 export default {
   name: "login",
