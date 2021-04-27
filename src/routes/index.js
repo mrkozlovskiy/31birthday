@@ -215,13 +215,12 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     routes
 })
 
 router.beforeEach((to, from, next) => {
     const appStore = getAppStore();
-    console.log(appStore)
     if(appStore[to.meta.pathStore]) {
         next({
             path: to.meta.nextStep
