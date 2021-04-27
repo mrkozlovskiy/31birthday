@@ -2,7 +2,7 @@
   <div>
     <Step
         title="16. Телепорт в 3 сентября"
-        image="https://lh3.googleusercontent.com/proxy/MTTFd3S5C0Y9kN3fxDG-Lsq04Rc_RMuQUAB1-ZVk2YuL1Uuml_GhW1VOb9bFQuIIf_tEeE_m23X6OzR3X3TyL75IsQ"
+        image="https://artpostergallery.ru/userdata/image/thumbs/0a/14/0a14c07304bc3000fb9f72c1a5fecfcc_2.jpg"
         @check="checkAnswer"
     >
       <p>Вспомнил как мечтал жить в Москва-Сити?</p>
