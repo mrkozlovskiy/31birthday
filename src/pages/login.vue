@@ -1,22 +1,26 @@
 <template>
-  <el-form :model="model" :rules="rules" ref="login" label-width="120px" label-position="left">
-    <el-form-item label="Логин" prop="login">
-      <el-input placeholder="Введи логин" v-model="model.login"></el-input>
-    </el-form-item>
-    <el-form-item label="Пароль" prop="password">
-      <el-input placeholder="Введи пароль" v-model="model.password" show-password></el-input>
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="submitForm('login')">Войти</el-button>
-    </el-form-item>
-  </el-form>
+  <el-row :gutter="10" type="flex" justify="center">
+    <el-col :xs="20" :sm="16" :md="12" :lg="12" :xl="12">
+      <el-form :model="model" :rules="rules" ref="login" label-width="120px" label-position="left">
+        <el-form-item label="Логин" prop="login">
+          <el-input placeholder="Введи логин" v-model="model.login"></el-input>
+        </el-form-item>
+        <el-form-item label="Пароль" prop="password">
+          <el-input placeholder="Введи пароль" v-model="model.password" show-password></el-input>
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" @click="submitForm('login')">Войти</el-button>
+        </el-form-item>
+      </el-form>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
 import { setAppStoreItem } from '../lib/appStore';
 
-const LOGIN = '123';
-const PASSWORD = '123';
+const LOGIN = 'kozlov';
+const PASSWORD = '2022';
 
 export default {
   name: "login",

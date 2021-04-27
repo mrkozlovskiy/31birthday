@@ -2,13 +2,26 @@ import VueRouter from 'vue-router';
 import { getAppStore } from '../lib/appStore'
 import Login from "../pages/login";
 import HappyBirthday from "../pages/happy-birthday";
-import Step1 from "../pages/bulgakov/step-1";
-import Step2 from "../pages/bulgakov/step-2";
-import Step3 from "../pages/egg/step-1";
-import Step4 from "../pages/egg/step-2";
-import Step5 from "../pages/egg/step-3";
-import Step6 from "../pages/tverskaya/step-1";
-import Step7 from "../pages/tverskaya/step-2";
+
+import Step1 from "../pages/forest/step-1";
+import Step2 from "../pages/hamo/step-2";
+import Step3 from "../pages/hamo/step-3";
+import Step4 from "../pages/mutnaya/step-4";
+import Step5 from "../pages/mutnaya/step-5";
+import Step6 from "../pages/egg/step-6";
+import Step7 from "../pages/egg/step-7";
+import Step8 from "../pages/egg/step-8";
+import Step9 from "../pages/tverskaya/step-9";
+import Step10 from "../pages/tverskaya/step-10";
+import Step11 from "../pages/singboard/step-11";
+import Step12 from "../pages/singboard/step-12";
+import Step13 from "../pages/bulgakov/step-13";
+import Step14 from "../pages/bulgakov/step-14";
+import Step15 from "../pages/city/step-15";
+import Step16 from "../pages/city/step-16";
+import Step17 from "../pages/metro/step-17";
+import Step18 from "../pages/home/step-18";
+
 import TheEnd from "../pages/the-end";
 
 const routes = [
@@ -90,6 +103,105 @@ const routes = [
             requiresAuth: true,
             pathStore: 'step7',
             nextStep: '/step-8'
+        }
+    },
+    {
+        path: '/step-8',
+        component: Step8,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step8',
+            nextStep: '/step-9'
+        }
+    },
+    {
+        path: '/step-9',
+        component: Step9,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step9',
+            nextStep: '/step-10'
+        }
+    },
+    {
+        path: '/step-10',
+        component: Step10,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step10',
+            nextStep: '/step-11'
+        }
+    },
+    {
+        path: '/step-11',
+        component: Step11,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step11',
+            nextStep: '/step-12'
+        }
+    },
+    {
+        path: '/step-12',
+        component: Step12,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step12',
+            nextStep: '/step-13'
+        }
+    },
+    {
+        path: '/step-13',
+        component: Step13,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step13',
+            nextStep: '/step-14'
+        }
+    },
+    {
+        path: '/step-14',
+        component: Step14,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step14',
+            nextStep: '/step-15'
+        }
+    },
+    {
+        path: '/step-15',
+        component: Step15,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step15',
+            nextStep: '/step-16'
+        }
+    },
+    {
+        path: '/step-16',
+        component: Step16,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step16',
+            nextStep: '/step-17'
+        }
+    },
+    {
+        path: '/step-17',
+        component: Step17,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step17',
+            nextStep: '/step-18'
+        }
+    },
+    {
+        path: '/step-18',
+        component: Step18,
+        meta: {
+            requiresAuth: true,
+            pathStore: 'step18',
+            nextStep: '/the-end'
         }
     },
     {

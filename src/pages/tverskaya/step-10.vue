@@ -1,7 +1,8 @@
 <template>
   <div>
     <Step
-        title=" задание"
+        title="10. Тренировка математических навыков"
+        image="https://postnauka.ru/files/images/2/6/0/0/0/0/0/0/0/0/thumb/aUaUwuKujfzNgpRUn_Xs9k0eUkHI_2vZ.jpg"
         @check="checkAnswer"
     >
       <p>Прекрасно! Ты отгадал место, где я бы уже сдалась :D</p>
@@ -19,7 +20,7 @@ export default {
   data() {
     return {
       valueTrue: '25',
-      number: 7
+      number: 10
     }
   },
   components: {

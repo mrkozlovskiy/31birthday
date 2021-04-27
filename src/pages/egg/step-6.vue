@@ -1,7 +1,8 @@
 <template>
   <div>
     <Step
-        title=" задание"
+        title="6. Загадка повышенной сложности"
+        image="https://image.freepik.com/free-vector/a-little-white-house_88088-10.jpg"
         @check="checkAnswer"
     >
       <p>Отгадай загадку:</p>
@@ -20,7 +21,7 @@ export default {
   data() {
     return {
       valueTrue: 'яйцо',
-      number: 3
+      number: 6
     }
   },
   components: {

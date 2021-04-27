@@ -6,7 +6,19 @@ export const appStore = {
     step3: false,
     step4: false,
     step5: false,
-    step6: false
+    step6: false,
+    step7: false,
+    step8: false,
+    step9: false,
+    step10: false,
+    step11: false,
+    step12: false,
+    step13: false,
+    step14: false,
+    step15: false,
+    step16: false,
+    step17: false,
+    step18: false
 }
 
 export const setAppStore = (value = appStore) => {

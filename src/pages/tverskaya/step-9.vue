@@ -1,7 +1,8 @@
 <template>
   <div>
     <Step
-        title=" задание"
+        title="9. По следам молодости"
+        image="https://avatars.mds.yandex.net/get-zen_doc/1542444/pub_5c9dca2a48972500b3cfa3ca_5c9dd6ddf7498800b3d2b3e6/scale_1200"
         @check="checkAnswer"
     >
       <p>В 2018 году ты переехал в Москву. И твои познания об этом городе и его истории безграничны))) </p>
@@ -20,8 +21,8 @@ export default {
   name: "first-step",
   data() {
     return {
-      valueTrue: '22',
-      number: 6
+      valueTrue: '5814',
+      number: 9
     }
   },
   components: {

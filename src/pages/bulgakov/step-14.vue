@@ -1,7 +1,8 @@
 <template>
   <div>
     <Step
-        title="Второе задание"
+        title="14. Время загадать желание"
+        image="https://img07.rl0.ru/afisha/e1200x600i/daily.afisha.ru/uploads/images/9/26/926003b007b240358d113080818d8fd1.jpg"
         @check="checkAnswer"
     >
       <p>Поздравляю! Ты нашел дом Булгакова!</p>
@@ -24,8 +25,8 @@ export default {
   name: "step-2",
   data() {
     return {
-      valueTrue: '22',
-      number: 2
+      valueTrue: '8457',
+      number: 14
     }
   },
   components: {

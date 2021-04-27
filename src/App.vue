@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <el-row :gutter="10" type="flex" justify="center">
-      <el-col :xs="24" :sm="16" :md="12" :lg="12" :xl="12">
-        <router-view></router-view>
-      </el-col>
-    </el-row>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,6 +11,45 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="css">
+body {
+  padding: 0;
+  margin: 0;
+}
+#app {
+  padding: 40px 0;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 60px);
+}
+/*#app::after {*/
+/*  content: '';*/
+/*  display: block;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  left: 0;*/
+/*  opacity: 0.15;*/
+/*  position: absolute;*/
+/*  background-position: center center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*  background-image: url("./assets/img/bulg1.png");*/
+/*  z-index: 10;*/
+/*}*/
+/*#app::before {*/
+/*  content: '';*/
+/*  display: block;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  left: 0;*/
+/*  opacity: 0.15;*/
+/*  position: absolute;*/
+/*  background-position: center center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*  background-image: url("./assets/img/bulg1.png");*/
+/*  z-index: 15;*/
+/*}*/
 </style>

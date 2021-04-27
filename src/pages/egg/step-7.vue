@@ -1,7 +1,8 @@
 <template>
   <div>
     <Step
-        title="- задание"
+        title="7. Красный этап"
+        image="https://image.freepik.com/free-photo/little-white-house-with-red-roof-and-blue-sky-on-snowy_49071-936.jpg"
         @check="checkAnswer"
     >
       <p>Именно оно!</p>
@@ -19,8 +20,8 @@ export default {
   name: "step-2",
   data() {
     return {
-      valueTrue: '22',
-      number: 4
+      valueTrue: '160',
+      number: 7
     }
   },
   components: {
