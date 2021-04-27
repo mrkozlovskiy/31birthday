@@ -39,7 +39,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'happyBirthday',
-            nextStep: '/#/step-1'
+            nextStep: '/step-1'
         }
     },
     {
@@ -48,7 +48,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step1',
-            nextStep: '/#/step-2'
+            nextStep: '/step-2'
         }
     },
     {
@@ -57,7 +57,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step2',
-            nextStep: '/#/step-3'
+            nextStep: '/step-3'
         }
     },
     {
@@ -66,7 +66,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step3',
-            nextStep: '/#/step-4'
+            nextStep: '/step-4'
         }
     },
     {
@@ -75,7 +75,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step4',
-            nextStep: '/#/step-5'
+            nextStep: '/step-5'
         }
     },
     {
@@ -84,7 +84,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step5',
-            nextStep: '/#/step-6'
+            nextStep: '/step-6'
         }
     },
     {
@@ -93,7 +93,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step6',
-            nextStep: '/#/step-7'
+            nextStep: '/step-7'
         }
     },
     {
@@ -102,7 +102,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step7',
-            nextStep: '/#/step-8'
+            nextStep: '/step-8'
         }
     },
     {
@@ -111,7 +111,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step8',
-            nextStep: '/#/step-9'
+            nextStep: '/step-9'
         }
     },
     {
@@ -120,7 +120,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step9',
-            nextStep: '/#/step-10'
+            nextStep: '/step-10'
         }
     },
     {
@@ -129,7 +129,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step10',
-            nextStep: '/#/step-11'
+            nextStep: '/step-11'
         }
     },
     {
@@ -138,7 +138,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step11',
-            nextStep: '/#/step-12'
+            nextStep: '/step-12'
         }
     },
     {
@@ -147,7 +147,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step12',
-            nextStep: '/#/step-13'
+            nextStep: '/step-13'
         }
     },
     {
@@ -156,7 +156,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step13',
-            nextStep: '/#/step-14'
+            nextStep: '/step-14'
         }
     },
     {
@@ -165,7 +165,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step14',
-            nextStep: '/#/step-15'
+            nextStep: '/step-15'
         }
     },
     {
@@ -174,7 +174,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step15',
-            nextStep: '/#/step-16'
+            nextStep: '/step-16'
         }
     },
     {
@@ -183,7 +183,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step16',
-            nextStep: '/#/step-17'
+            nextStep: '/step-17'
         }
     },
     {
@@ -192,7 +192,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step17',
-            nextStep: '/#/step-18'
+            nextStep: '/step-18'
         }
     },
     {
@@ -201,7 +201,7 @@ const routes = [
         meta: {
             requiresAuth: true,
             pathStore: 'step18',
-            nextStep: '/#/the-end'
+            nextStep: '/the-end'
         }
     },
     {
@@ -215,7 +215,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    // mode: 'history',
+    mode: 'history',
+    base: 'https://mrkozlovskiy.github.io/31birthday/',
     routes,
     // history: true,
 })
