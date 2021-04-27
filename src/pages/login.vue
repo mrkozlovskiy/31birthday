@@ -47,7 +47,7 @@ export default {
           if(this.validateForm()) {
             setAppStoreItem('login', true);
             console.log(JSON.parse(localStorage.getItem('appStore')))
-            this.$router.push({ path: '/happy-birthday' })
+            this.$router.push({ path: '/' })
           }
           else {
             this.$message.error('Oops, не подходит пароль! Мааакс, ну пересчитай внимательнее!');

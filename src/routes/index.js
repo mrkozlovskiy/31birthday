@@ -35,7 +35,7 @@ const routes = [
         }
     },
     {
-        path: '/happy-birthday',
+        path: '/',
         component: HappyBirthday,
         meta: {
             requiresAuth: true,
@@ -227,13 +227,14 @@ const routes = [
 
 const router = new VueRouter({
     // mode: 'history',
-    base: '/31birthday/#/',
+    // base: '/31birthday/#/',
     routes,
     // history: true,
 })
 
 router.beforeEach((to, from, next) => {
     const appStore = getAppStore();
+    console.log(to)
     if(appStore[to.meta.pathStore]) {
         next({
             path: to.meta.nextStep
