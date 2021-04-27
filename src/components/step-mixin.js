@@ -6,7 +6,7 @@ const stepMixin = {
             if(value === this.valueTrue) {
                 setAppStoreItem('step' + this.number, true)
                 console.log(this.$route)
-                // this.$router.push(this.)
+                this.$router.push(this.$route.meta.nextStep)
             }
             else {
                 this.$message.error('Oops, не подходит! Мааакс, ну будь внимательнее!');

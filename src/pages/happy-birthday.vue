@@ -16,7 +16,7 @@ export default {
   methods: {
     onClick() {
       setAppStoreItem('happyBirthday', true)
-      this.$router.go(0)
+      this.$router.push(this.$route.meta.nextStep)
     }
   }
 }
