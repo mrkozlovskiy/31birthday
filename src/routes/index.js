@@ -35,13 +35,22 @@ const routes = [
         }
     },
     {
-        path: '/',
+        path: '/happy-birthday',
         component: HappyBirthday,
         meta: {
             requiresAuth: true,
             pathStore: 'happyBirthday',
             nextStep: '/step-1'
-        }
+        },
+        // beforeEnter: (to, from, next) => {
+        //     if (sessionStorage.getItem('redirect') !== null) {
+        //         const redirect = sessionStorage.redirect
+        //         delete sessionStorage.redirect
+        //         next(redirect)
+        //     } else {
+        //         next()
+        //     }
+        // }
     },
     {
         path: '/step-1',
@@ -218,7 +227,7 @@ const routes = [
 
 const router = new VueRouter({
     mode: 'history',
-    base: 'https://mrkozlovskiy.github.io/',
+    // base: 'https://mrkozlovskiy.github.io/',
     routes,
     // history: true,
 })
