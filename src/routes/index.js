@@ -226,8 +226,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    mode: 'history',
-    // base: 'https://mrkozlovskiy.github.io/',
+    // mode: 'history',
+    base: 'https://mrkozlovskiy.github.io/31birthday/#',
     routes,
     // history: true,
 })
