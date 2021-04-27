@@ -23,6 +23,7 @@ import Step17 from "../pages/metro/step-17";
 import Step18 from "../pages/home/step-18";
 
 import TheEnd from "../pages/the-end";
+import NotFoundComponent from '../pages/NotFoundComponent'
 
 const routes = [
     {
@@ -212,6 +213,7 @@ const routes = [
             pathStore: 'theEnd'
         }
     },
+    { path: '*', component: NotFoundComponent }
 ]
 
 const router = new VueRouter({
