@@ -21,7 +21,7 @@ export default {
   name: "first-step",
   data() {
     return {
-      valueTrue: ' ',
+      valueTrue: '7',
       number: 17
     }
   },

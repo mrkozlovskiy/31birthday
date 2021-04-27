@@ -3,9 +3,8 @@ import {setAppStoreItem} from "../lib/appStore";
 const stepMixin = {
     methods: {
         checkAnswer(value) {
-            if(value === this.valueTrue) {
+            if(value.toLowerCase() === this.valueTrue.toLowerCase()) {
                 setAppStoreItem('step' + this.number, true)
-                console.log(this.$route)
                 this.$router.push(this.$route.meta.nextStep)
             }
             else {

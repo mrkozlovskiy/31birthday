@@ -3,6 +3,7 @@
     <Step
         title="18. Цель достигнута!"
         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXstH9ZvG3oN_AK41SeBSzos_xTGtrPVjm2w&usqp=CAU"
+        :noButton="false"
         @check="checkAnswer"
     >
       <p>Ураааа! Поздравляю!!! Ты почти получил свой подарок!</p>
@@ -11,7 +12,9 @@
       <p>Проходи, чувствуй себя как дома, но не забывай, что ты в гостях :D</p>
       <p>Яйца варить не нужно!!!</p>
       <p>Пройди в гости к тому цветку, который ты спас от смертельной засухи, пока его хозяйка рассекала по льду Байкала на коньках в костюме единорога.</p>
+      <h2 style="text-align: center; width: 50%; margin: 5px auto">Сделан с уважением, почитанием и вниманием своими руками для Вас! :D</h2>
       <p>Я надеюсь ты прошел квест как раз когда я дома или близко к моему приходу, самое время делать праздничный кальян!)</p>
+      <img width="85%" style="margin: 0 auto; display: block" src="https://oceania.ru/upload/iblock/cb1/shutterstock_351335603_1454003773_1140x570.jpg" height="auto"/>
     </Step>
   </div>
 </template>

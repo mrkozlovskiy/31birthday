@@ -1,19 +1,24 @@
 <template>
-  <el-row :gutter="10" type="flex" justify="center">
-    <el-col :xs="20" :sm="16" :md="12" :lg="12" :xl="12">
-      <el-form :model="model" :rules="rules" ref="login" label-width="120px" label-position="left">
-        <el-form-item label="Логин" prop="login">
-          <el-input placeholder="Введи логин" v-model="model.login"></el-input>
-        </el-form-item>
-        <el-form-item label="Пароль" prop="password">
-          <el-input placeholder="Введи пароль" v-model="model.password" show-password></el-input>
-        </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="submitForm('login')">Войти</el-button>
-        </el-form-item>
-      </el-form>
-    </el-col>
-  </el-row>
+  <div class="login">
+    <el-row :gutter="10" type="flex" justify="center">
+      <el-col :xs="20" :sm="16" :md="12" :lg="12" :xl="12">
+        <span>
+          Для авторизации в этот знаменательный день введи свою фамилию (на англ), а для пароля сложи свою дату рождения.
+        </span>
+        <el-form :model="model" :rules="rules" ref="login" label-width="120px" label-position="left" @submit.native.prevent="submitForm('login')">
+          <el-form-item label="Логин" prop="login">
+            <el-input placeholder="Введи логин" v-model="model.login"></el-input>
+          </el-form-item>
+          <el-form-item label="Пароль" prop="password">
+            <el-input placeholder="Введи пароль" v-model="model.password" show-password></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('login')">Войти</el-button>
+          </el-form-item>
+        </el-form>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 
 <script>
@@ -56,7 +61,7 @@ export default {
       });
     },
     validateForm() {
-      return this.model.login === LOGIN
+      return this.model.login.toLowerCase() === LOGIN.toLowerCase()
           && this.model.password === PASSWORD;
     }
   }
@@ -64,5 +69,15 @@ export default {
 </script>
 
 <style scoped>
-
+.login {
+  padding: 40px 0;
+  background-color: #FAEDD7;
+  width: 100vw;
+  height: 100vh;
+}
+span {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
 </style>

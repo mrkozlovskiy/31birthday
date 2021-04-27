@@ -7,7 +7,7 @@
         <div>
           <slot></slot>
         </div>
-        <el-form :model="model" :rules="rules" ref="answer" label-position="left">
+        <el-form :model="model" :rules="rules" ref="answer" label-position="left" v-if="noButton" @submit.native.prevent>
           <el-form-item label="Ответ" prop="value">
             <el-input placeholder="Введи ответ" v-model="model.value"></el-input>
           </el-form-item>
@@ -29,6 +29,10 @@ export default {
     },
     image: {
       type: String
+    },
+    noButton: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -72,7 +76,7 @@ export default {
 .overlay::after {
   content: '';
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(250,237,215, 0.4);
   display: block;
   width: 100%;
   height: 100%;

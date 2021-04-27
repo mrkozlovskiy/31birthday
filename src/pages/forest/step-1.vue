@@ -1,7 +1,7 @@
 <template>
   <div>
     <Step
-        title="1. Первый этап"
+        title="1. В путь"
         image="https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/05-06-2020-NICA-842350-haibitat-day-forest.jpg/image1170x530cropped.jpg"
         @check="checkAnswer"
     >
